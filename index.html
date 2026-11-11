@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Ahmad | Portfolio Showcase</title>
+  <meta name="description" content="Sara Ahmad - Junior Software Developer. A scroll-animated showcase of my CV website on desktop and mobile." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+
+  <div class="intro" id="intro"><div class="door top"></div><div class="door bot"></div><div class="intro-mark">Sara<span>.</span></div></div>
+
+  <div class="buddy" id="buddy" aria-hidden="true">
+    <div class="char">
+      <div class="char-body">
+        <svg class="char-svg" viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg" role="presentation">
+        <defs><pattern id="cvChk" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 0H12M0 0V12" stroke="#E0D9F0" stroke-width="1" opacity=".38" fill="none"/></pattern></defs>
+        <ellipse cx="100" cy="306" rx="48" ry="7" fill="#35495C" opacity=".16"/>
+        <g class="c-all">
+          <path d="M50 90 C38 150 50 186 68 196 L132 196 C150 186 162 150 150 90 Z" fill="#2E2F45"/>
+          <g class="c-leg-l"><path d="M78 210 H98 L96 284 H80 Z" fill="#78A3BD"/><path d="M74 282 H100 Q103 292 98 297 H72 Q68 288 74 282 Z" fill="#35495C"/></g>
+          <g class="c-leg-r"><path d="M102 210 H122 L120 284 H104 Z" fill="#78A3BD"/><path d="M100 282 H126 Q132 288 128 297 H102 Q97 292 100 282 Z" fill="#35495C"/></g>
+          <g class="c-torso">
+            <path d="M78 140 C64 142 56 152 55 168 L52 238 Q100 252 148 238 L145 168 C144 152 136 142 122 140 Z" fill="#8C94D0"/>
+            <path d="M78 140 C64 142 56 152 55 168 L52 238 Q100 252 148 238 L145 168 C144 152 136 142 122 140 Z" fill="url(#cvChk)"/>
+            <path d="M52 230 Q100 244 148 230 L148 238 Q100 252 52 238 Z" fill="#E0D9F0"/>
+            <path d="M84 142 Q100 178 116 142" fill="none" stroke="#35495C" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M89 144 Q100 172 111 144" fill="none" stroke="#E0D9F0" stroke-width="1.6" stroke-dasharray="2 3"/>
+            <path d="M100 170 V206" stroke="#6F78B8" stroke-width="1.5"/>
+            <circle cx="100" cy="172" r="2.6" fill="#35495C"/><circle cx="100" cy="186" r="2.6" fill="#35495C"/><circle cx="100" cy="200" r="2.6" fill="#35495C"/>
+          </g>
+          <g class="pouch" id="pouch">
+            <path d="M33 226 Q44 204 55 226" fill="none" stroke="#35495C" stroke-width="3" stroke-linecap="round"/>
+            <path d="M24 226 H64 L59 264 Q44 270 29 264 Z" fill="#7B86C6"/>
+            <path d="M32 242 H56" stroke="#E0D9F0" stroke-width="2" opacity=".6"/>
+            <ellipse class="pouch-mouth" cx="44" cy="227" rx="20" ry="4.5" fill="#35495C"/>
+            <circle class="pouch-glow" cx="44" cy="227" r="11" fill="#E0D9F0" opacity="0"/>
+          </g>
+          <path d="M58 166 L47 208" stroke="#8C94D0" stroke-width="20" stroke-linecap="round" fill="none"/>
+          <path d="M48 203 L46 211" stroke="#E0D9F0" stroke-width="21" stroke-linecap="round" fill="none"/>
+          <circle cx="44" cy="216" r="8.5" fill="#F3CDB0"/>
+          <g class="c-arm-r">
+            <path d="M142 166 L153 208" stroke="#8C94D0" stroke-width="20" stroke-linecap="round" fill="none"/>
+            <path d="M152 203 L154 211" stroke="#E0D9F0" stroke-width="21" stroke-linecap="round" fill="none"/>
+            <circle cx="156" cy="216" r="8.5" fill="#F3CDB0"/>
+          </g>
+          <circle cx="60" cy="162" r="17" fill="#8C94D0"/><circle cx="140" cy="162" r="17" fill="#8C94D0"/>
+          <path d="M50 155 Q58 147 68 151" stroke="#B3B9E4" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/>
+          <path d="M150 155 Q142 147 132 151" stroke="#B3B9E4" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/>
+          <rect x="89" y="126" width="22" height="22" rx="9" fill="#EBBF9E"/>
+          <path d="M70 144 Q100 168 130 144 L138 158 Q100 188 62 158 Z" fill="#E0D9F0" stroke="#C9C5E8" stroke-width="1.5"/>
+          <path d="M62 158 Q68 196 64 236 L84 234 Q84 196 86 172 Z" fill="#E0D9F0" stroke="#C9C5E8" stroke-width="1.5"/>
+          <g fill="#A9B0DC"><circle cx="72" cy="182" r="1.9"/><circle cx="76" cy="204" r="1.9"/><circle cx="71" cy="224" r="1.9"/><circle cx="80" cy="192" r="1.9"/><circle cx="92" cy="160" r="1.9"/><circle cx="110" cy="162" r="1.9"/><circle cx="124" cy="154" r="1.9"/></g>
+          <g class="c-head">
+            <circle cx="52" cy="98" r="9" fill="#F3CDB0"/><circle cx="148" cy="98" r="9" fill="#F3CDB0"/>
+            <circle cx="51" cy="116" r="8" fill="none" stroke="#B9C3D3" stroke-width="2.6"/><circle cx="149" cy="116" r="8" fill="none" stroke="#B9C3D3" stroke-width="2.6"/>
+            <ellipse cx="100" cy="96" rx="48" ry="46" fill="#F3CDB0"/>
+            <ellipse cx="66" cy="112" rx="9" ry="5" fill="#F29C9C" opacity=".4"/><ellipse cx="134" cy="112" rx="9" ry="5" fill="#F29C9C" opacity=".4"/>
+            <path d="M49 100 C36 44 78 24 100 28 C122 24 164 44 151 100 C148 82 136 66 120 58 C112 54 106 52 100 52 C94 52 88 54 80 58 C64 66 52 82 49 100 Z" fill="#2E2F45"/>
+            <path d="M100 29 V51" stroke="#4A4B66" stroke-width="2" opacity=".7"/>
+            <g transform="rotate(-5 100 40)"><rect x="60" y="28" width="34" height="18" rx="8" fill="#39405F"/><rect x="106" y="28" width="34" height="18" rx="8" fill="#39405F"/><path d="M94 36 H106" stroke="#39405F" stroke-width="3"/><path d="M67 34 q6 -3 13 0" stroke="#FFFFFF" stroke-width="2" opacity=".5" fill="none" stroke-linecap="round"/><path d="M113 34 q6 -3 13 0" stroke="#FFFFFF" stroke-width="2" opacity=".5" fill="none" stroke-linecap="round"/></g>
+            <path d="M69 82 Q80 75 91 81" stroke="#2E2F45" stroke-width="3.4" stroke-linecap="round" fill="none"/><path d="M109 81 Q120 75 131 82" stroke="#2E2F45" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+            <g class="eyes"><ellipse cx="80" cy="99" rx="6" ry="8" fill="#2E2F45"/><ellipse cx="120" cy="99" rx="6" ry="8" fill="#2E2F45"/><circle cx="82" cy="96" r="2.3" fill="#FFFFFF"/><circle cx="122" cy="96" r="2.3" fill="#FFFFFF"/></g>
+            <path d="M98 109 Q100 113 102 109" stroke="#D49C80" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M86 120 Q100 134 114 120 Q100 124 86 120 Z" fill="#D4575F"/>
+          </g>
+        </g>
+      </svg>
+      </div>
+    </div>
+    <div class="bubble" id="bubble">Hi, I'm Sara! Scroll down and I'll show you around.</div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo" data-p="0">Sara<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#top" data-p="0">Home</a>
+        <a href="#laptopSlot" data-p="0.12" class="hide-sm">Desktop</a>
+        <a href="#phoneSlot" data-p="0.66" class="hide-sm">Mobile</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education" class="hide-sm">Education</a>
+        <a href="#experience">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== STORY: hero, desktop zoom, phone zoom (scroll-driven) ===== -->
+    <section class="story" id="story">
+      <div class="stage" id="stage">
+        <div class="impact" id="impact"></div>
+
+        <!-- Scene 1: photo + intro -->
+        <div class="hero-layer" id="hero">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow rise" style="--d:.1s">Hello, I'm</p>
+              <h1 class="rise" style="--d:.2s">Sara Ahmad</h1>
+              <h2 class="rise" style="--d:.3s">Junior Software Developer</h2>
+              <p class="lead rise" style="--d:.4s">CS undergraduate skilled in C++, Python, SQL and Web Development. Passionate about problem-solving and software engineering.</p>
+              <p class="scroll-hint rise" style="--d:.7s"><span class="mouse"></span>Scroll to explore</p>
+            </div>
+            <div class="hero-photo">
+              <img class="avatar pop" src="assets/profile.png" alt="Sara Ahmad profile picture" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Scene 2: desktop (PNG screenshot inside a laptop frame) -->
+        <div class="slot" id="laptopSlot">
+          <div class="move" id="laptopMove">
+            <div class="zoom" id="laptopZoom">
+              <div class="laptop">
+                <div class="lid">
+                  <div class="screen" id="laptopScreen">
+                    <img id="deskImg" src="assets/desktop.png" alt="Desktop view of Sara Ahmad's CV website" draggable="false" />
+                  </div>
+                </div>
+                <div class="base"></div>
+              </div>
+            </div>
+          </div>
+          <p class="caption" id="capDesk">Desktop view</p>
+        </div>
+
+        <!-- Scene 3: phone (PNG screenshot inside a phone frame) -->
+        <div class="slot" id="phoneSlot">
+          <div class="move" id="phoneMove">
+            <div class="zoom" id="phoneZoom">
+              <div class="phone">
+                <div class="phone-screen" id="phoneScreen">
+                  <img id="mobImg" src="assets/mobile.png" alt="Mobile view of Sara Ahmad's CV website" draggable="false" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="caption" id="capMob">Mobile view</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="panel" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+          <div class="card reveal lift"><h3>Profile</h3>
+            <p>CS undergraduate skilled in C++, Python, SQL, and Web Development. Strong foundation in Data Structures and DBMS, with hands-on experience in building browser extensions and database projects. Passionate about problem-solving and software engineering.</p>
+            <div class="chips"><span class="chip" style="--i:0">English</span><span class="chip" style="--i:1">Urdu</span><span class="chip" style="--i:2">Arabic</span></div></div>
+          <div class="stats reveal">
+            <div class="stat"><b data-count="3">0</b><span>Projects</span></div>
+            <div class="stat"><b data-count="6">0</b><span>Programming languages</span></div>
+            <div class="stat"><b data-count="3">0</b><span>Spoken languages</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="panel" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid"><div class="card reveal lift"><h3>Programming Languages</h3><div class="chips"><span class="chip" style="--i:0">C++</span><span class="chip" style="--i:1">Python</span><span class="chip" style="--i:2">SQL</span><span class="chip" style="--i:3">HTML5</span><span class="chip" style="--i:4">CSS3</span><span class="chip" style="--i:5">JavaScript</span></div></div><div class="card reveal lift"><h3>Core CS Concepts</h3><div class="chips"><span class="chip" style="--i:0">Data Structures &amp; Algorithms</span><span class="chip" style="--i:1">DBMS</span><span class="chip" style="--i:2">Operating Systems</span><span class="chip" style="--i:3">OOP</span></div></div><div class="card reveal lift"><h3>Tools &amp; Technologies</h3><div class="chips"><span class="chip" style="--i:0">SQL / SQL*</span><span class="chip" style="--i:1">Google Colab</span><span class="chip" style="--i:2">Ubuntu / Linux</span><span class="chip" style="--i:3">Git &amp; GitHub</span><span class="chip" style="--i:4">MS Office Suite</span></div></div><div class="card reveal lift"><h3>Soft Skills</h3><div class="chips"><span class="chip" style="--i:0">Problem-Solving</span><span class="chip" style="--i:1">Algorithmic Thinking</span><span class="chip" style="--i:2">Technical Documentation</span><span class="chip" style="--i:3">Team Collaboration</span><span class="chip" style="--i:4">Presentations</span></div></div></div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="panel" id="education">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="tl reveal">
+          <div class="tl-item"><span class="tl-year">2024 - 2028</span><h3>Bachelors in Computer Science</h3><p>Qarshi University, Lahore</p></div>
+          <div class="tl-item"><span class="tl-year">2022 - 2024</span><h3>Intermediate with Biology (FSc Pre-medical)</h3><p>Kips College</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="panel" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal">Projects &amp; Experience</h2>
+        <div class="proj-grid"><div class="card reveal lift proj"><h3>Zen Glitch: Anti-Procrastination Screen Overlay</h3><p class="meta">Chrome Extension · HTML, CSS, JavaScript</p><ul><li>Designed and built a customizable work-break timer Chrome extension to manage productivity and prevent procrastination.</li><li>Implemented interactive UI/UX components, ambient sound integration, and dynamic screen-locking overlay scripts.</li></ul></div><div class="card reveal lift proj"><h3>Database System &amp; SQL Querying Module</h3><p class="meta">SQL · DBMS Concepts</p><ul><li>Modeled relational database schemas, designed ER diagrams, and wrote complex SQL queries for data extraction and joins.</li><li>Applied normalization techniques to optimize table structures and eliminate redundant data.</li></ul></div><div class="card reveal lift proj"><h3>Data Structures &amp; Algorithm Implementations</h3><p class="meta">C++ / Python</p><ul><li>Developed custom data structure solutions including Huffman Tree encoding/decoding calculations, sorting algorithms, and tree traversals.</li><li>Optimized time and space complexity for various algorithmic tasks as part of coursework logic design.</li></ul></div></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get in Touch</h2>
+        <div class="contact-grid">
+
+          <div class="card info reveal">
+            <h3>My Information</h3>
+            <ul>
+              <li><strong>Email</strong><a href="mailto:itssara198@gmail.com">itssara198@gmail.com</a></li>
+              <li><strong>Phone</strong><a href="tel:+923304518058">+92 330-4518-058</a></li>
+              <li><strong>Location</strong><span>Bahria Town, Lahore, Pakistan</span></li>
+              <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/sara-ahmad-3b82b2364" target="_blank" rel="noopener">sara-ahmad-3b82b2364</a></li>
+            </ul>
+          </div>
+
+          <form class="card form reveal" id="contactForm" novalidate>
+            <h3>Contact Us</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" autocomplete="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="How can I help you?"></textarea>
+            <p class="msg" id="formMsg" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Sara Ahmad. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
